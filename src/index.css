@@ -1,0 +1,57 @@
+@import-normalize;
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --primary-color: #333;
+  --secondary-color: #222;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  width: 100vw;
+
+  margin: 0;
+  padding: 1em;
+
+  -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  background: var(--secondary-color);
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: inherit;
+  background-color: inherit;
+
+  transition: opacity 0.4s ease-out;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+h2 {
+  margin: 0;
+}
